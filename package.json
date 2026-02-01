@@ -1,4 +1,6 @@
 {
+  "homepage": "https://harshvarma3695.github.io/harsh.restaurant",
+
   "name": "npm",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +9,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+
+
   },
   "dependencies": {
     "react": "^19.2.0",
